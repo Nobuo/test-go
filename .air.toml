@@ -1,0 +1,20 @@
+# https://github.com/cosmtrek/air configuration for hot reload
+[build]
+  cmd = "go build -o ./bin/local ./cmd/local"
+  bin = "./bin/local"
+  full_bin = ""
+  delay = 1000
+  log = "air.log"
+  stop_on_error = true
+
+[log]
+  time = true
+
+[colors]
+  main = "cyan"
+  watcher = "magenta"
+  build = "yellow"
+  runner = "green"
+
+[screen]
+  clear_on_rebuild = true
